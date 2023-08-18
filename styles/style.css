@@ -1,3 +1,42 @@
 *{
     margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+/* -------------------------header section banner area design----------------- */
+.header{
+    background-image: url(../assets/images/banner/banner2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.banner-contain{
+    text-align: right;
+    padding: 220px 230px 120px 800px;
+  
+}
+.banner-title{
+    color: #000000;
+    font-size: 65px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    
+
+}
+.banner-description{
+    color: #414141;
+    font-size: 16px;
+    font-weight: 450;
+    padding-bottom: 20px;
+}
+.btn-primary{
+    color: #ffff;
+    background-color: rgb(254, 86, 39);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
