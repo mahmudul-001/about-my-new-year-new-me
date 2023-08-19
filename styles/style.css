@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     font-family: 'Work Sans', sans-serif;
 }
+
 /* -------------------------header section banner area design----------------- */
-.header{
+.header {
     background-image: url(../assets/images/banner/banner2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,32 +12,64 @@
     height: 100vh;
 }
 
-.banner-contain{
+.banner-contain {
     text-align: right;
     padding: 220px 230px 120px 800px;
-  
+
 }
-.banner-title{
-    color: #000000;
+
+.banner-title {
+    color: black;
     font-size: 65px;
     font-weight: 700;
     padding-bottom: 20px;
-    
+
 
 }
-.banner-description{
+
+.banner-description {
     color: #414141;
     font-size: 16px;
     font-weight: 450;
     padding-bottom: 20px;
 }
-.btn-primary{
+
+.btn-primary {
     color: #ffff;
     background-color: rgb(254, 86, 39);
     font-size: 16px;
     font-weight: 600;
-    padding: 20px 25px;
+    padding: 18px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* -------------------------main section failures area design----------------- */
+.failures {
+    display: flex;
+    align-items: center;
+    padding: 130px 300px 220px 210px;
+    gap: 80px;
+}
+
+.contain-title {
+    color: black;
+    font-size: 45px;
+    font-weight: 700px;
+    padding: 80px 0px 20px 0px;
+}
+
+.contain-description {
+    color: #414141;
+    font-size: 16px;
+    font-weight: 500px;
+    padding-bottom: 15px;
+}
+
+.checkmarks {
+    color: #16D887;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 5px 7px;
 }
