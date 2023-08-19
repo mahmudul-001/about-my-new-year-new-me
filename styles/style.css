@@ -9,7 +9,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
 }
 
 .banner-contain {
@@ -36,16 +35,17 @@
 
 .btn-primary {
     color: #ffff;
-    background-color: rgb(254, 86, 39);
-    font-size: 16px;
-    font-weight: 600;
+    background-color: #F15B22;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
     padding: 18px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-/* -------------------------main section failures area design----------------- */
+/* -------------------------main section my failures area design----------------- */
 .failures {
     display: flex;
     align-items: center;
@@ -67,9 +67,57 @@
     padding-bottom: 15px;
 }
 
-.checkmarks {
+.checkmarks{
     color: #16D887;
     font-size: 19px;
     font-weight: 600;
     padding: 5px 7px;
+}
+
+/* -------------------------main section my plan area design----------------- */
+.my-plan{
+    display: flex;
+    padding: 0px 220px 0px 220px;
+    gap: 85px;
+}
+.plan-contain{
+    text-align: center;
+}
+.plan-contain img{
+    padding-bottom: 15px;
+}
+.plan-title{
+    color: black;
+    font-size: 30px;
+    font-weight: 700px;
+    padding-bottom: 15px;
+}
+.plan-description{
+    color: #414141;
+    font-size: 20px;
+    font-weight: 550px;
+    padding-bottom: 15px;
+}
+/* -------------------------main section mindset area design----------------- */
+.mindset{
+    background-image: url(../assets/images/gradient3.png), url('../assets/images/watch.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.mindset-contain{
+    padding: 180px 800px 190px 250px;  
+}
+.mindset-title{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 700px;
+    padding-bottom: 15px;
+}
+.mindset-contain .btn-primary{
+    color: #F15B22;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 16px 28px;
 }
