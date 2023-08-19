@@ -96,7 +96,7 @@
     color: #414141;
     font-size: 20px;
     font-weight: 550px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 /* -------------------------main section mindset area design----------------- */
 .mindset{
@@ -111,7 +111,7 @@
     color: rgb(255, 255, 255);
     font-size: 40px;
     font-weight: 700px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 .mindset-contain .btn-primary{
     color: #F15B22;
@@ -121,3 +121,39 @@
     text-align: center;
     padding: 16px 28px;
 }
+/* -------------------------main section about me area design----------------- */
+
+.about-me h1{
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.about-container{
+    background-color: #F15B22;
+    display: flex;
+    padding: 0px 130px 20px 130px;
+    margin: 0px 90px 20px 90px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 70px;
+}
+.about-single{
+    text-align: center;
+}
+.about-single .btn-primary{
+    color: #F15B22;
+    background-color: #ffff;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.about-single h2{
+    color: #ffff;
+}
+.about-single p{
+    color: #dcdcdc;
+}
+
+/* -------------------------footer section design----------------- */
