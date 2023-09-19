@@ -1,20 +1,55 @@
 * {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;  
+}
+body{
     font-family: 'Work Sans', sans-serif;
 }
+img{
+    max-width: 100%;
+}
 
-/* -------------------------header section banner area design----------------- */
+/* -------------------------Common design----------------- */
+.container{
+    width: 80%;
+    margin: 50px auto;  
+}
+.container-2{
+    width: 70%;
+    margin: 60px auto;  
+}
+.btn-primary {
+    color: #ffff;
+    background-color: #F15B22;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding: 18px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* -------------------------
+    header section 
+    banner area design
+---------------------------- */
 .header {
     background-image: url(../assets/images/banner/banner2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
+    height: 100vh;
 }
 
 .banner-contain {
+    width: 60%;
     text-align: right;
-    padding: 220px 230px 120px 800px;
-
+    padding-top: 200px;
+    padding-left: 150px;
+    margin: 0 auto;
+    
 }
 
 .banner-title {
@@ -32,32 +67,21 @@
     font-weight: 450;
     padding-bottom: 20px;
 }
-
-.btn-primary {
-    color: #ffff;
-    background-color: #F15B22;
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-    padding: 18px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 /* -------------------------main section my failures area design----------------- */
 .failures {
     display: flex;
     align-items: center;
-    padding: 130px 300px 220px 210px;
-    gap: 80px;
+    gap: 85px;
+}
+.failures-contain{
+    width: 50%;
 }
 
 .contain-title {
     color: black;
-    font-size: 45px;
+    font-size: 37px;
     font-weight: 700px;
-    padding: 80px 0px 20px 0px;
+    padding-bottom: 30px;
 }
 
 .contain-description {
@@ -77,14 +101,13 @@
 /* -------------------------main section my plan area design----------------- */
 .my-plan{
     display: flex;
-    padding: 0px 220px 0px 220px;
-    gap: 85px;
+    gap: 80px;
 }
 .plan-contain{
     text-align: center;
 }
 .plan-contain img{
-    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 .plan-title{
     color: black;
@@ -105,7 +128,9 @@
     background-repeat: no-repeat;
 }
 .mindset-contain{
-    padding: 180px 800px 190px 250px;  
+    width: 70%;
+    padding: 40px 50px;
+    margin: 0 auto; 
 }
 .mindset-title{
     color: rgb(255, 255, 255);
@@ -123,18 +148,17 @@
 }
 /* -------------------------main section about me area design----------------- */
 
-.about-me h1{
+.about-title{
     color: black;
     font-size: 50px;
     font-weight: 700;
     text-align: center;
-    padding-bottom: 70px;
+    margin-bottom: 60px;
 }
 .about-container{
     background-color: #F15B22;
     display: flex;
-    padding: 0px 130px 20px 130px;
-    margin: 0px 90px 70px 90px;
+    padding: 40px 40px;
     border-radius: 10px;
     align-items: center;
     gap: 70px;
@@ -175,24 +199,24 @@
     color: #dcdcdc;
     font-size: 15px;
     font-weight: 450;
-    padding: 0px 180px 20px 0px;
+    padding-bottom: 15px;
+   
 }
-.future-container{
-    padding: 100px 200px 20px 130px;
+.future-container, .subscribe-container{
+    width: 50%;
+    padding: 50px 30px;
 }
 .future-container img{
     padding-right: 15px;
-}
-.subscribe-container{
-    padding: 100px 230px 20px 50px;
-
+    cursor: pointer;
 }
 .subscribe-container input{
     color: #ffff;
     background-color: #000000;
     font-size: 16px;
     font-weight: 500;
-    padding: 15px 100px 15px 15px;
+    width: 100%;
+    padding: 15px 15px;
     border: 1px solid white;
     border-radius: 8px;
     outline: none;
@@ -200,8 +224,9 @@
 .subscribe-container .btn-primary{
     color: #F15B22;
     background-color: #ffff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
+    padding: 15px 15px;
     margin-top: 20px;
 }
 .copyright{
@@ -212,4 +237,43 @@
     text-align: center;
     padding: 10px;
 }
+
+/* ---------------------------
+    Media query styles
+--------------------------- */
+
+/* --------------Mobiles Devices---------------- */
+@media only screen and (max-width: 688px) {
+
+    .container, .container-2, 
+    .failures-contain, .mindset-contain, 
+    .future-container, .subscribe-container{
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .header{
+        background-image: none;
+        height: auto;
+    }
+    .banner-contain{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+    .banner-title, .contain-title, 
+    .mindset-title, .about-title{
+        font-size: 30px; 
+    }
+    .banner-description{
+        font-size: 14px;
+    }
+    .failures, .my-plan, 
+    .about-container,.footer-contain{
+        flex-direction: column;
+        gap: 20px;
+    }  
+}
+
+
 /* --------------end styles---------------- */
